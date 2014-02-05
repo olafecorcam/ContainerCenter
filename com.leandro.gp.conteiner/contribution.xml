@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+  xmlns="http://www.sap.com/bi/zen/sdk"
+  id="com.leandro.gp.conteiner"
+  title="Conteiner Centralizador"
+  version="1.0"
+  vendor="SAP">
+  <component
+    id="Conteiner"
+    title="Conteiner"
+    tooltip="Conteiner - Grupo Petrópolis"
+    icon="res/icon.png"
+    handlerType="div"
+    propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html"
+    databound="true">
+    <jsInclude>res/js/component.js</jsInclude>
+   <property type="String" title="Altura" id="altura"/>
+   <property type="String" title="Largura" id="largura"/>
+   <property type="String" title="URL" id="url"/>
+    <initialization>
+      <defaultValue property="WIDTH">100%</defaultValue>
+      <defaultValue property="HEIGHT">100%</defaultValue> 
+      <defaultValue property="altura">600</defaultValue>
+      <defaultValue property="largura">800</defaultValue>
+      <defaultValue property="url">http://www.uol.com.br</defaultValue>   
+    </initialization>
+  </component>
+</sdkExtension>
